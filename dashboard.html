@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labour Market Dashboard - Power BI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Additional styles for Power BI embedding */
+        .powerbi-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .powerbi-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .dashboard-notes {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #1a3e8c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="top-bar">
+                <div class="logo">
+                    <img src="images/logo.png" alt="MyFutureJobs Logo">
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <div class="container">
+            <h1 class="page-title">Labour Market Analytics Dashboard</h1>
+            
+            <!-- Power BI Embedded Dashboard -->
+           <!-- Replace the existing Power BI section with this -->
+            <div class="dashboard-card">
+                <h2>Interactive visualization of Malaysia's job market</h2>
+                <p>Guide is provided below</p>
+                
+                <div class="powerbi-wrapper">
+                    <div class="powerbi-container">
+                    <iframe title="FINAL DASHBOARD" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiYzcwZWM0ZmMtMmJmNC00ZGVkLWIxZjgtOTRjM2ExNTY0Y2FjIiwidCI6ImNkY2JiMGUyLTlmZWEtNGY1NC04NjcwLTY3MjcwNzc5N2FkYSIsImMiOjEwfQ%3D%3D&pageName=ab8a66712e91a543633b" frameborder="0" allowFullScreen="true"></iframe>
+                    </div>
+                </div>
+                
+                <div class="dashboard-notes">
+                    <h3>How to use this dashboard:</h3>
+                    <ul>
+                        <li>The left side indicates navigation to move between pages</li>
+                        <li>Use the slicers to focus on specific regions/industries</li>
+                        <li>Hover over charts for detailed tooltips</li>
+                        <li>Click "Guide" on the dashboard for further details</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Malaysia Job Market Dashboard. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Sample JavaScript to display last updated date
+        document.getElementById('update-date').textContent = new Date().toLocaleDateString('en-MY', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        
+        // You would add Power BI JavaScript API integration here
+        // Reference: https://learn.microsoft.com/en-us/power-bi/developer/embedded/embed-quickstart
+    </script>
+</body>
+</html>
